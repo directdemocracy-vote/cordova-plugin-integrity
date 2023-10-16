@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="vote.directdemocracy.integrity"
-        version="1.0.0">
-
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="vote.directdemocracy.integrity" version="1.0.0">
   <name>Integrity</name>
-
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
-
-  <asset src="www/Integrity.js" target="js/Integrity.js"/>
-
-  <js-module src="www/Integrity.js" name="integrity">
-    <clobbers target="Integrity" />
+  <asset src="www/integrity.js" target="js/integrity.js"/>
+  <js-module src="www/integrity.js" name="integrity">
+    <clobbers target="integrity" />
   </js-module>
-
   <platform name="android">
-
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Integrity">
-        <param name="android-package" value="vote.directdemocracy.plugin.Integrity"/>
+      <feature name="integrity">
+        <param name="android-package" value="vote.directdemocracy.plugin.integrity"/>
       </feature>
     </config-file>
-
     <source-file src="src/android/Integrity.java" target-dir="src/com/example/plugin/"/>
   </platform>
 </plugin>

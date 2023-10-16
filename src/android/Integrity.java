@@ -13,15 +13,11 @@ public class Integrity extends CordovaPlugin {
       callbackContext.success(message);
       return true;
     } else if (action.equals("check")) {
-      try {
-        return check(alias, callbackContext);
-      } catch (Exception e) {
-        return false;
-      }
+      return check(alias, callbackContext);
     } else
       return false;
   }
-  public boolean check(String alias, byte[] message, CallbackContext callbackContext) throws Exception {
+  public boolean check(String alias, CallbackContext callbackContext) {
     callbackContext.success("Check done");
     return true;
   }

@@ -4,7 +4,7 @@ import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class integrity extends CordovaPlugin {
+public class Integrity extends CordovaPlugin {
   @Override
   public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
     String alias = data.getString(0);

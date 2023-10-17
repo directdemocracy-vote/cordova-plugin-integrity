@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="vote.directdemocracy.integrity" version="1.0.0">
-  <name>Integrity</name>
+  <name>integrity</name>
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
@@ -11,9 +11,9 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="integrity">
-        <param name="android-package" value="vote.directdemocracy.plugin.integrity"/>
+        <param name="android-package" value="vote.directdemocracy.integrity"/>
       </feature>
     </config-file>
-    <source-file src="src/android/Integrity.java" target-dir="src/vote/directdemocracy/plugin/"/>
+    <source-file src="src/android/integrity.java" target-dir="src/vote/directdemocracy/integrity/"/>
   </platform>
 </plugin>

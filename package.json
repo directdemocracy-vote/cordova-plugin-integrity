@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-integrity",
   "version": "1.0.0",
-  "description": "An interface to Android Play Integrity",
+  "description": "Cordova Integrity Plugin",
   "cordova": {
     "id": "cordova-plugin-integrity",
     "platforms": [
@@ -14,12 +14,9 @@
   },
   "keywords": [
     "cordova",
-    "plugin",
-    "integrity",
-    "ecosystem:cordova",
-    "cordova-android"
+    "integrity"
   ],
-  "author": "Olivier Michel",
+  "author": "DirectDemocracy",
   "license": "Apache-2",
   "bugs": {
     "url": "https://github.com/directdemocracy-vote/cordova-plugin-integrity/issues"

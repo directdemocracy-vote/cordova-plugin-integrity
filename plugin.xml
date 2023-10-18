@@ -20,4 +20,14 @@
     </config-file>
     <source-file src="src/android/Integrity.java" target-dir="src/vote/directdemocracy/integrity"/>
   </platform>
+  <platform name="browser">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Integrity">
+        <param name="browser-package" value="vote.directdemocracy.integrity.Integrity" />
+      </feature>
+    </config-file>
+    <js-module src="src/browser/integrity.js" name="Integrity">
+      <runs />
+    </js-module>
+  </platform>
 </plugin>

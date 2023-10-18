@@ -25,23 +25,16 @@ public class Integrity extends CordovaPlugin {
         callbackContext.error("Play Services not found");
         return true;
       }
-
       IntegrityManager integrityManager = IntegrityManagerFactory.create(context);
       Task<IntegrityTokenResponse> integrityTokenResponse = integrityManager.requestIntegrityToken(
         IntegrityTokenRequest.builder().setNonce(nonce).build());
-    
       integrityTokenResponse.addOnSuccessListener(integrityTokenResponse1 -> {
         String integrityToken = integrityTokenResponse1.token();
         callbackContext.success(integrityToken);
       });
-
       integrityTokenResponse.addOnFailureListener(e -> {
-        callbackContext.error("Integrity check failed: " + e.getMessage());
+        callbackContext.error("Integrity check failed: " + e.errorCode + " : " + e.getMessage());
       });
-      return true;
-    } else if (action.equals("greet")) {
-      String message = "Hello Mr. " + data.getString(0);
-      callbackContext.success(message);
       return true;
     } else {
       callbackContext.error("Invalid method: " + action);

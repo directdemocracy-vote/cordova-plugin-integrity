@@ -33,7 +33,7 @@ public class Integrity extends CordovaPlugin {
         callbackContext.success(integrityToken);
       });
       integrityTokenResponse.addOnFailureListener(e -> {
-        callbackContext.error("Integrity check failed: " + e.errorCode + " : " + e.getMessage());
+        callbackContext.error(e.getMessage());
       });
       return true;
     } else {

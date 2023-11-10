@@ -10,7 +10,7 @@
   if (alias == nil)
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Error"];
   else
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Success"”];
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Success"];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 

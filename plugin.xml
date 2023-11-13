@@ -23,13 +23,13 @@
   </platform>
 
   <platform name="ios">
+    <dependency id="cordova-plugin-add-swift-support" spec="~1.7.2" />
     <config-file target="config.xml" parent="/*">
       <feature name="Integrity">
         <param name="ios-package" value="Integrity" />
       </feature>
     </config-file>
-    <header-file src="src/ios/Integrity.h" />
-    <source-file src="src/ios/Integrity.m" />
+    <source-file src="src/ios/Integrity.swift" />
   </platform>
 
   <platform name="browser">

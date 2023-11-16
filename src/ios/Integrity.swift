@@ -15,7 +15,7 @@ class Integrity : CDVPlugin {
         return;
       })
     } else {
-      let pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: "Not supported")
+      let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: "N/A")
       self.commandDelegate!.send(pluginResult, callbackId: command.callbackId)
     }
   }

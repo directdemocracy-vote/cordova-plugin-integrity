@@ -1,4 +1,3 @@
-import Foundation
 import DeviceCheck
 
 @objc(Integrity)
